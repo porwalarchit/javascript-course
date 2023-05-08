@@ -1,0 +1,1 @@
+This folder contains the code that uses different DOM properties and methods to display the score of teams along with dynamic styling.

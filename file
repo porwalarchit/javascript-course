@@ -1,0 +1,163 @@
+// const word='stressed';
+// let r="";
+// for(let i=word.length;i>=0;i--){
+//     r+=word[i];
+//     console.log(r)
+// }
+// const target=Math.floor(Math.random()*10);
+// let guess=Math.floor(Math.random()*10);
+// while(guess!==target){
+//     console.log(`Target:${target} Guess: ${guess}`);
+//     guess=Math.floor(Math.random()*10);
+
+// }
+// console.log(`Target:${target} Guess: ${guess}`);
+// console.log("Congrats");
+// let subredits=['soccer','books','cringe']
+// for(sub of subredits){
+//     console.log(sub);
+// }
+// for(let i of 'archit'){
+//     console.log(i.toUpperCase());
+// }
+// const movieReview={
+//     Arrival: 9.6,
+//     Alien:9.0,
+//     Amelie:8.7,
+//     'In Bruges':9,
+    
+// };
+// for(let i in movieReview){
+//     console.log(i);
+// }
+// function grumpups(){
+//     alert("okok")
+ 
+// }
+// setTimeout()
+// function rolldie(){
+//     let roll=Math.floor(Math.random()*6);
+//     return roll;
+// }
+// function sum(a,b){
+//     return a+b;
+// }
+//  function isValidPassword(password,username){
+//     const tooShort=password.length<8;
+//     const hasSpace=password.indexOf(' ')!==-1;
+//     const tooSimilar=password.indexOf(username)!==-1;
+//     if(!tooShort&&!hasSpace&&!tooSimilar)return true;
+//     return false;
+
+        
+    
+//  }
+// function isPangram(sentence){
+//     let a=sentence.toLowerCase();
+//     for(let char of 'abcdefghijklmnopqrstuvwxyz')
+//     {
+//         if(a.indexOf(char)==-1){
+//             return false;
+//         }
+//         return true;
+//     }
+// }
+// let bird=12;
+// function birdy(){
+//     bird=2;
+//     console.log(bird);
+// }
+// console.log(bird);
+// function add(x,y){
+//     return x+y;
+// }
+// const subtract=function(x,y){
+//     return x-y;
+// }
+// function divide(x,y){
+//     return x/y;
+// }
+// function mul(x,y){
+//     return x*y;
+// }
+// const operations=[add,subtract,divide,mul];
+// for(let a of operations){
+//     let r=a('1','2');
+//     console.log(r);
+// }
+// const thing={
+//     dook:mul
+// }
+// function callThreeTimes(f){
+//     f();
+//     f();
+//     f();
+// }
+// function rage(){
+//     console.log("Aaaaaaaah")
+// }
+// function multiplyBy(num){
+//     return function(x){
+//      return x*num;
+//     }
+// }   
+// const btn=document.querySelector('button');
+// btn.addEventListener('click',function(){
+//     alert("Whyyy!!!!")
+// })
+// setTimeout(grumpups,50000)
+// console.log(animal);
+// var animal='Tapir';
+// console.log(animal);
+// console.log(animal);
+// let shrimp='Tapir';
+// console.log(shrimp);
+// const nums=[20,21,22,23,24,25,26,27];
+// function square(num){
+//     console.log(num*num);
+// }
+// // nums.forEach(square);
+// const texts=['hello','hi','how','what','where']
+// const caps=nums.map(function(t){
+//     return t*t;
+// })
+// const det=nums.map(function(n){
+//     return{
+//         value:n,
+//         even:n%2==0
+//     }
+// })
+// nums.filter(n=>
+//     {return n%2==0;})
+// const words=['dog','dig','log','bag','wag'];
+// words.every(word=>
+//     word.length==3;
+// )
+// const lastLetter=words.every(word=>{
+//     const last=word.length-1;
+//     return word[last]=='g';
+// })
+// const prices=[400.5,3000,99.99,35.9,12.00,9500];
+// const sort1=prices.sort((a,b)=>a-b);
+// const grades=[87,64,96,88,73,70,64,99];
+// const maxGrade=grades.reduce((max,curr)=>{
+//     if(curr>max)
+//     return curr;
+//     else
+//     return max;
+// })
+// const grades=[87,64,96,88,73,70,64,99];
+// const minGrade=grades.reduce((min,curr)=>{
+//    return Math.min(min,curr);
+// })
+// const votes=['y','y','y','y','y','y','y','n','n','n','n','n','n'];
+// const result=votes.reduce((tally,val)=>{
+//     if(tally[val])
+//     tally[val]++;
+//     else
+//     tally[val]=1;
+//     return tally;
+// },{})
+function multiply(a,b=1){
+    return a*b;
+}
