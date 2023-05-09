@@ -23,16 +23,28 @@
 // console.log('Request Sent!');
 
 
-fetch('https://swapi.dev/api/planetsf')
+fetch('https://swapi.dev/api/planets')
 	.then((response) => {
 		if (!response.ok) {
 			throw new Error('Error, Status Code: ', response.status);
 		}
-		response.json().then((data) => {
-			for (let planet of data.results) {
-				console.log(planet.name);
-			}
-		});
+		return response.json();
+	})
+	.then((data) => {
+		// for (let planet of data.results) { console.log(planet.name); }
+		console.log("Fetched all planets")
+		const filmUrl = data.results[0].films[0];
+		return fetch(filmUrl);
+	})
+	.then((response) => {
+		if (!response.ok) {
+			throw new Error('Error, Status Code: ', response.status);
+		}
+		return response.json();
+	})
+	.then((data) => {
+		console.log('Fetched First film, based off of first planet');
+		console.log(data.title);
 	})
 	.catch((err) => {
 		console.log("Something went wrong with fetch!!");
