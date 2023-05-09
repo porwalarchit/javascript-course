@@ -19,62 +19,42 @@ const moveX = (element, amount, delay, onSuccess, onFailure) => {
 };
 
 // LOOK AT THIS UGLY MESS!
-moveX(
-	btn,
-	300,
-	1000,
-	() => {
+moveX(btn, 300, 1000, () => {
+	//success callback
+	moveX(btn, 300, 1000, () => {
 		//success callback
-		moveX(
-			btn,
-			300,
-			1000,
-			() => {
+		moveX(btn, 300, 1000, () => {
+			//success callback
+			moveX(btn, 300, 1000, () => {
 				//success callback
-				moveX(
-					btn,
-					300,
-					1000,
-					() => {
-						//success callback
-						moveX(
-							btn,
-							300,
-							1000,
-							() => {
-								//success callback
-								moveX(
-									btn,
-									300,
-									1000,
-									() => {
-										//success callback
-										alert('YOU HAVE A WIDE SCREEN!');
-									},
-									() => {
-										//failure callback
-										alert('CANNOT MOVE FURTHER!');
-									}
-								);
-							},
-							() => {
-								//failure callback
-								alert('CANNOT MOVE FURTHER!');
-							}
-						);
-					},
+				moveX(btn, 300, 1000, () => {
+					//success callback
+					alert('YOU HAVE A WIDE SCREEN!');
+				},
 					() => {
 						//failure callback
 						alert('CANNOT MOVE FURTHER!');
 					}
 				);
 			},
+				() => {
+					//failure callback
+					alert('CANNOT MOVE FURTHER!');
+				}
+			);
+		},
 			() => {
 				//failure callback
 				alert('CANNOT MOVE FURTHER!');
 			}
 		);
 	},
+		() => {
+			//failure callback
+			alert('CANNOT MOVE FURTHER!');
+		}
+	);
+},
 	() => {
 		//failure callback
 		alert('CANNOT MOVE FURTHER!');
