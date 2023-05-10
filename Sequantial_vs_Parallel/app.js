@@ -23,9 +23,7 @@ async function get3Pokemon() {
 
 get3Pokemon();
 
-// *******************************************
 // A better demonstration of the difference...
-// *******************************************
 function changeBodyColor(color, delay) {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
@@ -42,6 +40,7 @@ async function lightShow() {
 	await changeBodyColor('indigo', 1000);
 	await changeBodyColor('violet', 1000);
 }
+
 // IN PARALLEL...
 // Everything is "sent off" at the same time
 // async function lightShow() {
